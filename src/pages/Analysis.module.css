@@ -1,0 +1,113 @@
+.page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+.hero {
+    background: radial-gradient(at top center, #FFFFFF 0%, #FAFAF9 80%);
+    padding: 5rem 0 3rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 900px !important;
+    padding: 4rem 1rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    border-left: 3px solid var(--color-secondary);
+    padding-left: 1rem;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.section p {
+    color: var(--color-text-dim);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.section ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+}
+
+.section li {
+    margin-bottom: 1rem;
+    color: var(--color-text-dim);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.section li::before {
+    content: "•";
+    color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.section strong {
+    color: var(--color-primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--color-surface);
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+}

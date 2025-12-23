@@ -1,0 +1,142 @@
+.page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: var(--color-bg-dark);
+    /* Gentle gradient */
+    background-image: radial-gradient(circle at 80% 20%, #F1F5F9 0%, #FAFAF9 60%);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 4rem 1rem;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-text-dim);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 400px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(180, 142, 46, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.item h3 {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item p {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.formContainer {
+    background: #FFFFFF;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.form h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.group {
+    margin-bottom: 1.5rem;
+}
+
+.group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+}
+
+.group input,
+.group select,
+.group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-family: var(--font-body);
+    transition: border-color 0.2s;
+}
+
+.group input:focus,
+.group select:focus,
+.group textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    background: #FFFFFF;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-secondary);
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(180, 142, 46, 0.3);
+}
+
+.submitBtn:hover {
+    background: var(--color-secondary-light);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

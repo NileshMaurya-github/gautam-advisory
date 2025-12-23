@@ -1,0 +1,150 @@
+.page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+.hero {
+    background: radial-gradient(circle at 50% 0%, #FFFFFF 0%, #F1F5F9 100%);
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.backBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.backBtn:hover {
+    color: var(--color-secondary);
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--color-text-dim);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    padding: 4rem 1rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    border-left: 4px solid var(--color-secondary);
+    padding-left: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+}
+
+.processList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.processItem {
+    display: flex;
+    gap: 1.5rem;
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    align-items: flex-start;
+}
+
+.stepNumber {
+    background: var(--color-secondary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.stepContent p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.benefitsList {
+    list-style: none;
+}
+
+.benefitsList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+
+.checkIcon {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+
+.sidebar {
+    position: relative;
+}
+
+.stickyForm {
+    position: sticky;
+    top: 100px;
+    /* Offset for navbar */
+}
+
+.notFound {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.backLink {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+@media (max-width: 968px) {
+    .contentContainer {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+}

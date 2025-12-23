@@ -1,0 +1,123 @@
+.page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.hero {
+    background: var(--color-bg-dark);
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.backBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.backBtn:hover {
+    color: var(--color-secondary);
+}
+
+.meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+}
+
+.meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category {
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    line-height: 1.2;
+    max-width: 900px;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    padding: 4rem 1rem;
+}
+
+.articleBody {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+}
+
+.articleBody h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.articleBody p {
+    margin-bottom: 1.5rem;
+}
+
+.articleBody ul,
+.articleBody ol {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.articleBody li {
+    margin-bottom: 0.8rem;
+}
+
+.divider {
+    height: 1px;
+    background: #E2E8F0;
+    margin: 3rem 0;
+}
+
+.share {
+    background: #F8FAFC;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.sidebar {
+    position: relative;
+}
+
+.stickyForm {
+    position: sticky;
+    top: 100px;
+}
+
+.notFound {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+@media (max-width: 968px) {
+    .contentContainer {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
