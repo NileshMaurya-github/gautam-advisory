@@ -1,20 +1,20 @@
-<<<<<<< HEAD
-# React + Vite
+# Gautam Advisory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Gautam Advisory is a premium financial consultancy firm providing tax, audit, and compliance services. This website reflects their "God Level" service quality with a high-end, 3D corporate aesthetic.
 
-Currently, two official plugins are available:
+## Features
+*   **3D Corporate Theme**: Custom glassmorphism, animations, and premium typography.
+*   **Services Portfolio**: Detailed pages for Corporate, Individual, and Startup services.
+*   **Interactive FAQ**: Accordion-style FAQ section for quick answers.
+*   **Responsive Design**: Fully optimized for all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+*   React (Vite)
+*   Framer Motion (Animations)
+*   CSS Modules (Styling)
+*   React Router DOM (Navigation)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# gautam-advisory
->>>>>>> 918990b041208413b78416fb774e6bcea6080cb9
+## Getting Started
+1.  `npm install`
+2.  `npm run dev`
