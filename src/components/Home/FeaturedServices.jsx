@@ -1,88 +1,94 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaCalculator, FaBuilding, FaFileInvoiceDollar, FaChartLine, FaRegistered, FaProjectDiagram, FaBalanceScale, FaSearchDollar } from 'react-icons/fa';
+import { FaRocket, FaTrademark, FaFileInvoiceDollar, FaCalculator, FaBalanceScale, FaUserTie, FaBuilding, FaGlobe } from 'react-icons/fa';
 import styles from './FeaturedServices.module.css';
 
 const services = [
     {
-        icon: <FaFileInvoiceDollar />,
-        title: "GST Compliance",
-        description: "End-to-end GST retention: Monthly filings, reconciliation, and notices handling.",
-        id: "ca-gst"
+        icon: <FaRocket />,
+        title: "Startup India",
+        description: "Registration, recognition, and tax benefits for new businesses.",
+        id: "startup",
+        link: "/startup"
     },
     {
-        icon: <FaBuilding />,
-        title: "Company Incorporation",
-        description: "Start right. Pvt Ltd, LLP, or OPC registration with complete MCA compliance.",
-        id: "ca-incorp"
+        icon: <FaTrademark />,
+        title: "Trademark",
+        description: "Protect your brand with trademark registration and objection handling.",
+        id: "trademark",
+        link: "/trademark"
+    },
+    {
+        icon: <FaFileInvoiceDollar />,
+        title: "GST Services",
+        description: "Seamless GST registration, return filing, and compliance management.",
+        id: "gst",
+        link: "/gst"
     },
     {
         icon: <FaCalculator />,
-        title: "Income Tax Filing",
-        description: "Tax planning and ITR filing for individuals and corporates to maximize savings.",
-        id: "ca-itr"
-    },
-    {
-        icon: <FaChartLine />,
-        title: "Virtual CFO",
-        description: "Strategic financial leadership for startups without the cost of a full-time CFO.",
-        id: "ca-vcfo"
-    },
-    {
-        icon: <FaRegistered />,
-        title: "Trademark Registration",
-        description: "Protect your brand identity. Search, filing, and objection handling.",
-        id: "cs-ip"
-    },
-    {
-        icon: <FaProjectDiagram />,
-        title: "Project Funding",
-        description: "Bank-ready Project Reports (CMA Data) to secure loans and investment.",
-        id: "ca-proj-report"
+        title: "Income Tax",
+        description: "Expert assistance for personal and corporate income tax filing.",
+        id: "income-tax",
+        link: "/income-tax"
     },
     {
         icon: <FaBalanceScale />,
-        title: "Business Valuation",
-        description: "Defensible valuation reports (DCF/NAV) for funding, M&A, and regulatory compliance.",
-        id: "ca-valuation"
+        title: "Legal Compliance",
+        description: "Company annual filings, MCA compliance, and regulatory adherence.",
+        id: "compliance",
+        link: "/compliance"
     },
     {
-        icon: <FaSearchDollar />,
-        title: "Due Diligence",
-        description: "Uncover hidden risks. Comprehensive legal and financial checks for investors and acquirers.",
-        id: "cs-dd"
+        icon: <FaUserTie />,
+        title: "Virtual CFO",
+        description: "Strategic financial leadership to grow your business sustainably.",
+        id: "vcfo",
+        link: "/services/vcfo" // Assuming a specific page or generic service page
+    },
+    {
+        icon: <FaBuilding />,
+        title: "Company Incorp",
+        description: "PVT LTD, LLP, and OPC registration with end-to-end support.",
+        id: "incorporation",
+        link: "/startup/pvt-ltd"
+    },
+    {
+        icon: <FaGlobe />,
+        title: "Global Business",
+        description: "Expand your business globally with Import Export Code (IEC) & more.",
+        id: "global",
+        link: "/startup/iec"
     }
 ];
 
 const FeaturedServices = () => {
     return (
         <section className={styles.section}>
-            <div className="container">
+            <div className={styles.container}>
                 <div className={styles.header}>
-                    <h2>Most Requested Services</h2>
-                    <p>Expert solution for your most critical financial and compliance needs.</p>
+                    <h2>Cloud-based Services for your Business</h2>
+                    <p>India’s most trusted platform for legal, tax, and compliance services.</p>
                 </div>
 
                 <div className={styles.grid}>
                     {services.map((service, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.card}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className={styles.iconWrapper}>
-                                {service.icon}
-                            </div>
-                            <h3>{service.title}</h3>
-                            <p>{service.description}</p>
-                            <Link to={`/services/${service.id}`} className={styles.link}>
-                                View Details &rarr;
-                            </Link>
-                        </motion.div>
+                        <Link to={service.link} key={index} className={styles.cardLink}>
+                            <motion.div
+                                className={styles.card}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.05 }}
+                                viewport={{ once: true }}
+                            >
+                                <div className={styles.iconWrapper}>
+                                    {service.icon}
+                                </div>
+                                <h3>{service.title}</h3>
+                                <p>{service.description}</p>
+                            </motion.div>
+                        </Link>
                     ))}
                 </div>
 

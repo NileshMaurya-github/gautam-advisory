@@ -48,7 +48,7 @@ const Contact = () => {
                                 <div className={styles.icon}><FaEnvelope /></div>
                                 <div>
                                     <h3>Email</h3>
-                                    <p><a href="mailto:info@gautamadvisory.com">info@gautamadvisory.com</a></p>
+                                    <p><a href="mailto:info@delhifilings.com">info@delhifilings.com</a></p>
                                 </div>
                             </div>
                         </div>

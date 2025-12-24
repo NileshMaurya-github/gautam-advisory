@@ -4,11 +4,13 @@ import Layout from './components/Layout/Layout';
 import ScrollToTop from './components/Layout/ScrollToTop';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
+import ServiceDetail from './pages/ServiceDetail'; // Keep generic service detail for now if used elsewhere
 import Analysis from './pages/Analysis';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import CategoryLandingPage from './pages/CategoryLandingPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 
 
 // Wrapper for page transitions
@@ -38,6 +40,11 @@ const AppContent = () => {
           <Route path="/analysis" element={<PageTransition><Analysis /></PageTransition>} />
           <Route path="/services" element={<PageTransition><Services /></PageTransition>} />
           <Route path="/services/:id" element={<PageTransition><ServiceDetail /></PageTransition>} />
+
+          {/* Dynamic Category & Service Pages */}
+          <Route path="/:category" element={<PageTransition><CategoryLandingPage /></PageTransition>} />
+          <Route path="/:category/:serviceId" element={<PageTransition><ServiceDetailPage /></PageTransition>} />
+
           <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
           <Route path="/blog/:id" element={<PageTransition><BlogPost /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />

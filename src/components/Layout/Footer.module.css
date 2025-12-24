@@ -1,151 +1,180 @@
+/* Footer.module.css - Premium Redesign */
+
 .footer {
-    background-color: #0F172A;
-    /* Slate 900 */
-    color: #E2E8F0;
-    /* Slate 200 */
-    padding: 4rem 0 2rem;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    /* Deep Navy Gradient */
+    color: #e2e8f0;
+    padding: 80px 0 40px;
     margin-top: auto;
+    border-top: 5px solid #007bff;
+    /* Brand Accent */
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.2fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 60px;
+    margin-bottom: 60px;
 }
 
-.col h2 {
-    color: #FFFFFF;
-    margin-bottom: 1.5rem;
-    font-family: var(--font-heading);
-}
-
-.col h3 {
-    color: var(--color-secondary);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* Brand Column */
+.logo {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .about {
-    color: #94A3B8;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 30px;
     max-width: 350px;
+    font-size: 0.95rem;
 }
 
 .contactInfo p {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 0.8rem;
-    color: #CBD5E1;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
 }
 
 .icon {
-    color: var(--color-secondary);
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+/* Quick Access Column */
+.col h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .links {
     list-style: none;
+    padding: 0;
 }
 
 .links li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12px;
 }
 
 .links a {
-    color: #CBD5E1;
+    color: #94a3b8;
     text-decoration: none;
-    transition: color var(--transition-fast);
+    transition: all 0.3s;
+    font-size: 1rem;
+    display: inline-block;
 }
 
 .links a:hover {
-    color: var(--color-secondary);
-    padding-left: 5px;
+    color: #007bff;
+    transform: translateX(5px);
 }
 
-/* Newsletter Styles */
+/* Newsletter Column */
 .newsletterText {
     font-size: 0.9rem;
-    color: #94A3B8;
-    margin-bottom: 1rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .newsletterForm {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .newsletterForm input {
-    padding: 0.8rem;
-    border-radius: 4px 0 0 4px;
+    padding: 12px 15px;
+    border-radius: 6px 0 0 6px;
     border: 1px solid #334155;
-    background: #1E293B;
+    background: #1e293b;
     color: white;
     width: 100%;
+    font-size: 0.95rem;
 }
 
 .newsletterForm input:focus {
     outline: none;
-    border-color: var(--color-secondary);
+    border-color: #007bff;
 }
 
 .newsletterForm button {
-    padding: 0 1rem;
-    background: var(--color-secondary);
+    padding: 0 20px;
+    background: #007bff;
     color: white;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 6px 6px 0;
     cursor: pointer;
     transition: background 0.2s;
+    font-size: 1rem;
 }
 
 .newsletterForm button:hover {
-    background: #CBA234;
-    /* Slightly lighter gold */
+    background: #0056b3;
 }
 
-/* Socials */
+/* Social Icons */
 .socials {
     display: flex;
-    gap: 1.2rem;
+    gap: 20px;
 }
 
 .socials a {
-    color: #94A3B8;
+    color: #94a3b8;
     font-size: 1.5rem;
-    transition: all 0.2s;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .socials a:hover {
-    color: var(--color-secondary);
+    color: white;
+    background: #007bff;
     transform: translateY(-3px);
 }
 
 /* Bottom Bar */
 .bottom {
-    border-top: 1px solid #1E293B;
-    padding-top: 2rem;
+    border-top: 1px solid #334155;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 20px;
     font-size: 0.9rem;
-    color: #64748B;
+    color: #64748b;
 }
 
 .legal {
     display: flex;
-    gap: 1.5rem;
+    gap: 25px;
     cursor: pointer;
 }
 
+.legal:hover {
+    color: #94a3b8;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 968px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 40px;
     }
 
     .bottom {
@@ -155,5 +184,10 @@
 
     .legal {
         justify-content: center;
+    }
+
+    .logo {
+        text-align: left;
+        /* Keep left alignment for brand */
     }
 }

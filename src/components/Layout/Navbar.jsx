@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 import styles from './Navbar.module.css';
+import { menuData } from '../../data/menuData';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -16,39 +17,55 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navLinks = [
-        { title: 'Home', path: '/' },
-        { title: 'Strategic Analysis', path: '/analysis' },
-        { title: 'Services', path: '/services' },
-        { title: 'Insights', path: '/blog' },
-        { title: 'Contact', path: '/contact' },
-    ];
+    const closeMobileMenu = () => {
+        setMobileMenuOpen(false);
+        window.scrollTo(0, 0);
+    };
 
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <Link to="/" onClick={() => {
-                        setMobileMenuOpen(false);
-                        window.scrollTo(0, 0);
-                    }}>
-                        Gautam <span>Advisory</span>
+                    <Link to="/" onClick={closeMobileMenu}>
+                        Delhi <span>Filings</span>
                     </Link>
                 </div>
 
                 <ul className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
-                    {navLinks.map((link) => (
-                        <li key={link.title}>
+                    {/* Dynamic Menu Items from Data */}
+                    {menuData.map((menu, index) => (
+                        <li key={index} className={styles.navItem}>
                             <Link
-                                to={link.path}
-                                className={`${styles.navLink} ${location.pathname === link.path ? styles.activeLink : ''}`}
-                                onClick={() => {
-                                    setMobileMenuOpen(false);
-                                    window.scrollTo(0, 0);
+                                to={menu.path}
+                                className={styles.navLink}
+                                onClick={(e) => {
+                                    if (window.innerWidth < 992) {
+                                        closeMobileMenu();
+                                    }
                                 }}
                             >
-                                {link.title}
+                                {menu.title}
                             </Link>
+
+                            {/* Mega Menu Dropdown */}
+                            {menu.submenu && (
+                                <div className={styles.megaMenu}>
+                                    {menu.submenu.map((subCategory, subIndex) => (
+                                        <div key={subIndex} className={styles.menuColumn}>
+                                            <div className={styles.categoryTitle}>{subCategory.category}</div>
+                                            <ul className={styles.menuList}>
+                                                {subCategory.items.map((item, itemIndex) => (
+                                                    <li key={itemIndex}>
+                                                        <Link to={item.path} onClick={closeMobileMenu}>
+                                                            {item.label}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                         </li>
                     ))}
                 </ul>

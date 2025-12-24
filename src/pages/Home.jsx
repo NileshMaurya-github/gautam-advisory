@@ -20,7 +20,7 @@ const Home = () => {
                         viewport={{ once: true }}
                         className="text-center"
                     >
-                        <h2 className={styles.sectionTitle}>Why Trust Gautam Advisory?</h2>
+                        <h2 className={styles.sectionTitle}>Why Trust Delhi Filings?</h2>
                         <p className={styles.sectionSubtitle}>We don't just file forms; we architect financial stability.</p>
                     </motion.div>
 
@@ -58,7 +58,7 @@ const Home = () => {
                         >
                             <FaHandshake className={styles.trustIcon} />
                             <h3>Owner-Led Attention</h3>
-                            <p>Every critical file is reviewed by Gautam Mauya personally. You get the expertise of a partner, not an intern.</p>
+                            <p>Every critical file is reviewed by our experts personally. You get the expertise of a partner, not an intern.</p>
                         </motion.div>
                     </div>
                 </div>

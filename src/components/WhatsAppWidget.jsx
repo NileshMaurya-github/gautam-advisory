@@ -4,7 +4,7 @@ import styles from './WhatsAppWidget.module.css';
 
 const WhatsAppWidget = () => {
     const phoneNumber = "919266730027"; // User provided number
-    const message = "Hi Gautam Advisory, I would like to inquire about your services.";
+    const message = "Hi Delhi Filings, I would like to inquire about your services.";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

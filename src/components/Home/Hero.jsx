@@ -40,7 +40,7 @@ const Hero = () => {
                     <div className={styles.glassCard}>
                         {/* Custom Generated GST Dashboard Image */}
                         <img
-                            src="/gst_dashboard_3d.png"
+                            src="/IMG_20251224_214937.png"
                             alt="GST & Tax Compliance Dashboard"
                             className={styles.dashboardImage}
                         />

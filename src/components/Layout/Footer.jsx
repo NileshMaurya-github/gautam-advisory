@@ -19,14 +19,14 @@ const Footer = () => {
 
                     {/* Brand & Address */}
                     <div className={styles.col}>
-                        <h2 className={styles.logo}>Gautam Advisory</h2>
+                        <h2 className={styles.logo}>Delhi Filings</h2>
                         <p className={styles.about}>
                             Strategic financial guidance for businesses and individuals. We turn compliance into a competitive advantage.
                         </p>
                         <div className={styles.contactInfo}>
                             <p><FaMapMarkerAlt className={styles.icon} /> Vasant Kunj, New Delhi - 110070</p>
                             <p><FaPhoneAlt className={styles.icon} /> +91 92667 30027</p>
-                            <p><FaEnvelope className={styles.icon} /> info@gautamadvisory.com</p>
+                            <p><FaEnvelope className={styles.icon} /> info@delhifilings.com</p>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>&copy; {new Date().getFullYear()} Gautam Advisory. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Delhi Filings. All Rights Reserved.</p>
                     <p className={styles.legal}>Privacy Policy | Terms of Service</p>
                 </div>
             </div>
