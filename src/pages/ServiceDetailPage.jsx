@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCheckCircle, FaInfoCircle, FaHome, FaAngleRight, FaFileAlt, FaRupeeSign } from 'react-icons/fa';
 import HeroContactForm from '../components/HeroContactForm';
-import { getServiceData } from '../data/serviceDetailData';
+import { getServiceData } from '../data/serviceDetailData.js';
 import styles from './ServiceDetail.module.css';
 
 const ServiceDetailPage = () => {

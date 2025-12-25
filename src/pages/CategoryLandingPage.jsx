@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import * as Icons from 'react-icons/fa';
 import ContactForm from '../components/ContactForm';
 import HeroContactForm from '../components/HeroContactForm';
-import { getCategoryData } from '../data/categoryData';
+import { getCategoryData } from '../data/categoryData.js';
 import styles from './Startup.module.css';
 
 const CategoryLandingPage = () => {
