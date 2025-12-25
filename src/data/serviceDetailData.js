@@ -3760,6 +3760,187 @@ export const serviceDetailData = {
         }
     },
     "global": {
+        "cross-border-tax": {
+            title: "Cross Border Taxation",
+            tagline: "Expert advisory on international tax treaties and compliance.",
+            about: [
+                "Navigating the complexities of cross-border transactions requires in-depth knowledge of DTAA (Double Taxation Avoidance Agreements) and local laws.",
+                "We assist businesses and individuals in optimizing their tax liabilities across jurisdictions."
+            ],
+            keyFeature: "DTAA Benefit Analysis & Filing"
+        },
+        "customs-trade": {
+            title: "Customs & International Trade",
+            tagline: "Seamless import-export compliance and duty optimization.",
+            about: [
+                "Our experts help you understand customs regulations, tariff classifications, and valuation rules.",
+                "Ensure your international supply chain is compliant and cost-effective."
+            ],
+            keyFeature: "Import/Export Duty Planning"
+        },
+        "expatriate-services": {
+            title: "Global Expatriate Services",
+            tagline: "Tax planning for globally mobile employees.",
+            about: [
+                "We provide tax planning and compliance services for individuals working outside their home country.",
+                "Services include tax equalization, social security planning, and filing returns in multiple countries."
+            ],
+            keyFeature: "Expat Tax Residency Planning"
+        },
+        "global-tax": {
+            title: "Global Tax Services",
+            tagline: "Comprehensive international tax solutions.",
+            about: [
+                "A holistic approach to managing your global tax footprint.",
+                "We coordinate with local experts worldwide to ensure your global operations are compliant."
+            ],
+            keyFeature: "Integrated Global Tax Strategy"
+        },
+        "transfer-pricing": {
+            title: "Transfer Pricing",
+            tagline: "Arm's length pricing for inter-company transactions.",
+            about: [
+                "Documentation and planning to justify pricing between related parties across borders.",
+                "Compliance with OECD guidelines and local transfer pricing regulations."
+            ],
+            keyFeature: "Transfer Pricing Audit Defense"
+        },
+        "transaction-tax": {
+            title: "Transaction Tax",
+            tagline: "Tax advisory for mergers, acquisitions, and restructuring.",
+            about: [
+                "Assess the tax implications of major business transactions.",
+                "We help structure deals to minimize tax leakage and ensure regulatory approval."
+            ],
+            keyFeature: "M&A Tax Due Diligence"
+        },
+        "representation": {
+            title: "Representation Services",
+            tagline: "Representing your interests before foreign tax authorities.",
+            about: [
+                "If you face inquiries or audits from foreign tax bodies, our network of experts can represent you.",
+                "Dispute resolution and litigation support for international tax matters."
+            ],
+            keyFeature: "International Tax Dispute Resolution"
+        },
+        "usa-federal-tax": {
+            title: "USA Federal Tax",
+            tagline: "IRS compliance for US entities and foreign investors.",
+            about: [
+                "Filing Form 1120 for C-Corps, 1065 for Partnerships, and 5472 for foreign-owned US corporations.",
+                "Expert guidance on US federal tax laws and state nexus issues."
+            ],
+            keyFeature: "Form 5472 & 1120 Filing"
+        },
+        "eu-vat": {
+            title: "EU VAT Compliance",
+            tagline: "One-Stop-Shop (OSS) and IOSS registration for EU sales.",
+            about: [
+                "Selling to customers in the European Union requires strict VAT compliance.",
+                "We assist with OSS registration to file a single VAT return for all EU sales."
+            ],
+            keyFeature: "OSS/IOSS Registration & Filing"
+        },
+        "ireland-corporate-tax": {
+            title: "Ireland Corporate Tax",
+            tagline: "Low corporate tax planning in Ireland.",
+            about: [
+                "Ireland offers one of the lowest corporate tax rates in Europe (12.5%).",
+                "We handle CT1 filing and ensure compliance with Irish Revenue Commissioners."
+            ],
+            keyFeature: "12.5% Tax Rate Optimization"
+        },
+        "ireland-vat": {
+            title: "Ireland VAT & Customs",
+            tagline: "VAT registration and customs for Irish trade.",
+            about: ["Assistance with Irish VAT registration for domestic and cross-border trade."],
+            keyFeature: "Irish VAT Registration"
+        },
+        "cyprus-vat": {
+            title: "Cyprus VAT",
+            tagline: "VAT services for Cyprus entities.",
+            about: ["Registration and quarterly VAT filing in Cyprus."],
+            keyFeature: "Cyprus VAT Compliance"
+        },
+        "cyprus-cgt": {
+            title: "Cyprus Capital Gains Tax",
+            tagline: "Advisory on property and share disposals in Cyprus.",
+            about: ["Specific rules apply to gains from immovable property in Cyprus."],
+            keyFeature: "CGT Exemptions Analysis"
+        },
+        "singapore-gst": {
+            title: "Singapore GST",
+            tagline: "Goods & Services Tax compliance for Singapore businesses.",
+            about: ["Mandatory if turnover exceeds SGD 1 million. We handle F5 return filing."],
+            keyFeature: "Singapore GST Registration"
+        },
+        "singapore-corporate-tax": {
+            title: "Singapore Corporate Tax",
+            tagline: "Form C-S/C filing for Singapore companies.",
+            about: ["Benefit from Singapore's tax incentives and startup exemptions."],
+            keyFeature: "ECI & Form C-S Filing"
+        },
+        "australia-gst": {
+            title: "Australia GST",
+            tagline: "BAS Lodgment and GST registration.",
+            about: ["GST applies to most goods and services in Australia. We assist with BAS filing."],
+            keyFeature: "Business Activity Statement (BAS)"
+        },
+        "china-enterprise-tax": {
+            title: "China Enterprise Income Tax",
+            tagline: "Compliance for WFOEs and Representative Offices.",
+            about: ["Navigating China's complex tax system for foreign enterprises."],
+            keyFeature: "Quarterly EIT Filing"
+        },
+        "hong-kong-tax": {
+            title: "Hong Kong Corporate Tax",
+            tagline: "Profits Tax Return filing.",
+            about: ["Hong Kong follows a territorial source principle of taxation."],
+            keyFeature: "Offshore Tax Exemption Claim"
+        },
+        "australia-income-tax": {
+            title: "Australia Income Tax",
+            tagline: "Tax return filing for Australian entities.",
+            about: ["Compliance with ATO regulations for companies and trusts."],
+            keyFeature: "Comapny Tax Return"
+        },
+        "australia-fbt": {
+            title: "Australia FBT",
+            tagline: "Fringe Benefits Tax advisory.",
+            about: ["Assessment and filing of FBT for employee benefits provided."],
+            keyFeature: "FBT Return Filing"
+        },
+        "china-individual-tax": {
+            title: "China Individual Income Tax",
+            tagline: "IIT filing for expats in China.",
+            about: ["Compliance with China's 183-day rule and global income taxation."],
+            keyFeature: "Monthly IIT Filing"
+        },
+        "hong-kong-individual": {
+            title: "Hong Kong Individual Tax",
+            tagline: "Salaries Tax compliance.",
+            about: ["Filing BIR60 for individuals working in Hong Kong."],
+            keyFeature: "Salaries Tax Assessment"
+        },
+        "ireland-income-tax": {
+            title: "Ireland Income Tax",
+            tagline: "Form 11 filing for self-employed.",
+            about: ["Personal tax compliance for residents and non-residents in Ireland."],
+            keyFeature: "Preliminary Tax Calculation"
+        },
+        "ireland-cgt": {
+            title: "Ireland Capital Gains Tax",
+            tagline: "CGT payment and return filing.",
+            about: ["Advisory on disposal of assets and available reliefs."],
+            keyFeature: "CGT Payment Slips"
+        },
+        "ireland-cat": {
+            title: "Ireland Capital Acquisition Tax",
+            tagline: "Gift and Inheritance tax planning.",
+            about: ["Planning for passing wealth to the next generation in Ireland."],
+            keyFeature: "CAT Threshold Analysis"
+        },
+
         "uk-vat": {
             title: "UK VAT Registration",
             tagline: "Expand your business to the United Kingdom. Mandatory for sellers exceeding the threshold.",

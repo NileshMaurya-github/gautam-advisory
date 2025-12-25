@@ -1,0 +1,139 @@
+/* About.module.css */
+.page {
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+}
+
+.heroContent h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--font-heading);
+}
+
+.heroContent p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.storySection {
+    padding: 100px 0;
+    background: white;
+}
+
+.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.storyContent h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+}
+
+.storyContent p {
+    font-size: 1.1rem;
+    color: var(--color-text-dim);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.storyVisual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.visualCard {
+    background: #f8fafc;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.visualCard h3 {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+.visualCard p {
+    color: var(--color-text-dim);
+    font-weight: 600;
+}
+
+.valueSection {
+    padding: 100px 0;
+    background: #f1f5f9;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--color-primary);
+}
+
+.valueGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.valueCard {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+.valueCard h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.valueCard p {
+    color: var(--color-text-dim);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+    .storyGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valueGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heroContent h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .valueGrid {
+        grid-template-columns: 1fr;
+    }
+}

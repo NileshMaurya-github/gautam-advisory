@@ -1,65 +1,65 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaRocket, FaTrademark, FaFileInvoiceDollar, FaCalculator, FaBalanceScale, FaUserTie, FaBuilding, FaGlobe } from 'react-icons/fa';
+import { FaRocket, FaTrademark, FaFileInvoiceDollar, FaCalculator, FaBalanceScale, FaUserTie, FaBuilding, FaGlobe, FaUtensils, FaShip, FaIndustry } from 'react-icons/fa';
 import styles from './FeaturedServices.module.css';
 
 const services = [
     {
-        icon: <FaRocket />,
-        title: "Startup India",
-        description: "Registration, recognition, and tax benefits for new businesses.",
-        id: "startup",
-        link: "/startup"
+        icon: <FaBuilding />,
+        title: "Pvt Ltd Company",
+        description: "Register your Private Limited Company with complete documents.",
+        id: "pvt-ltd",
+        link: "/startup/pvt-ltd"
+    },
+    {
+        icon: <FaFileInvoiceDollar />,
+        title: "GST Registration",
+        description: "Get your GSTIN in 3-7 days with expert assistance.",
+        id: "gst-reg",
+        link: "/gst/registration"
     },
     {
         icon: <FaTrademark />,
         title: "Trademark",
-        description: "Protect your brand with trademark registration and objection handling.",
-        id: "trademark",
-        link: "/trademark"
-    },
-    {
-        icon: <FaFileInvoiceDollar />,
-        title: "GST Services",
-        description: "Seamless GST registration, return filing, and compliance management.",
-        id: "gst",
-        link: "/gst"
+        description: "Secure your brand name and logo with TM registration.",
+        id: "trademark-reg",
+        link: "/trademark/registration"
     },
     {
         icon: <FaCalculator />,
-        title: "Income Tax",
-        description: "Expert assistance for personal and corporate income tax filing.",
-        id: "income-tax",
-        link: "/income-tax"
-    },
-    {
-        icon: <FaBalanceScale />,
-        title: "Legal Compliance",
-        description: "Company annual filings, MCA compliance, and regulatory adherence.",
-        id: "compliance",
-        link: "/compliance"
+        title: "Income Tax Filing",
+        description: "Expert assisted ITR filing for individuals and businesses.",
+        id: "itr",
+        link: "/income-tax/efiling"
     },
     {
         icon: <FaUserTie />,
-        title: "Virtual CFO",
-        description: "Strategic financial leadership to grow your business sustainably.",
-        id: "vcfo",
-        link: "/services/vcfo" // Assuming a specific page or generic service page
+        title: "LLP Registration",
+        description: "Register your Limited Liability Partnership efficiently.",
+        id: "llp",
+        link: "/startup/llp"
     },
     {
-        icon: <FaBuilding />,
-        title: "Company Incorp",
-        description: "PVT LTD, LLP, and OPC registration with end-to-end support.",
-        id: "incorporation",
-        link: "/startup/pvt-ltd"
+        icon: <FaUtensils />,
+        title: "FSSAI License",
+        description: "Food license registration for restaurants and food businesses.",
+        id: "fssai",
+        link: "/registrations/fssai-reg"
     },
     {
-        icon: <FaGlobe />,
-        title: "Global Business",
-        description: "Expand your business globally with Import Export Code (IEC) & more.",
-        id: "global",
-        link: "/startup/iec"
+        icon: <FaShip />,
+        title: "Import Export Code",
+        description: "Mandatory IEC for doing international trade.",
+        id: "iec",
+        link: "/registrations/iec"
+    },
+    {
+        icon: <FaIndustry />,
+        title: "Udyam Registration",
+        description: "MSME registration to avail government benefits.",
+        id: "udyam",
+        link: "/registrations/udyam"
     }
 ];
 

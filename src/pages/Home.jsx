@@ -5,7 +5,9 @@ import LatestInsights from '../components/Home/LatestInsights';
 import FAQSection from '../components/Home/FAQSection';
 import { motion } from 'framer-motion';
 import { FaUserShield, FaChartLine, FaHandshake } from 'react-icons/fa';
-import styles from './Home.module.css'; // We'll create this to style the new section
+import styles from './Home.module.css';
+import ProcessFlow from '../components/Home/ProcessFlow';
+import Testimonials from '../components/Home/Testimonials';
 
 const Home = () => {
     return (
@@ -65,6 +67,8 @@ const Home = () => {
             </section>
 
             <FeaturedServices />
+            <ProcessFlow />
+            <Testimonials />
             <LatestInsights />
             <FAQSection />
         </div>

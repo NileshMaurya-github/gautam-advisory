@@ -294,10 +294,51 @@ export const menuData = [
                 ]
             },
             {
-                category: "Trademark",
+                category: "Global Tax Advisory",
                 items: [
-                    { label: "USA Trademark", path: "/global/usa-trademark" },
-                    { label: "International Trademark", path: "/global/international-trademark" }
+                    { label: "Cross Border Taxation", path: "/global/cross-border-tax" },
+                    { label: "Customs & Int. Trade", path: "/global/customs-trade" },
+                    { label: "Global Expatriate Services", path: "/global/expatriate-services" },
+                    { label: "Global Tax Services", path: "/global/global-tax" },
+                    { label: "Transfer Pricing", path: "/global/transfer-pricing" },
+                    { label: "Transaction Tax", path: "/global/transaction-tax" },
+                    { label: "Representation Services", path: "/global/representation" }
+                ]
+            },
+            {
+                category: "Americas & Europe Tax",
+                items: [
+                    { label: "USA Federal Tax", path: "/global/usa-federal-tax" },
+                    { label: "UK VAT", path: "/global/uk-vat" },
+                    { label: "EU VAT", path: "/global/eu-vat" },
+                    { label: "Ireland Corporate Tax", path: "/global/ireland-corporate-tax" },
+                    { label: "Ireland VAT & Customs", path: "/global/ireland-vat" },
+                    { label: "Cyprus VAT", path: "/global/cyprus-vat" },
+                    { label: "Cyprus Capital Gain", path: "/global/cyprus-cgt" }
+                ]
+            },
+            {
+                category: "Middle East & APAC Tax",
+                items: [
+                    { label: "UAE VAT", path: "/global/uae-vat" },
+                    { label: "UAE Corporate Tax", path: "/global/uae-corporate-tax" },
+                    { label: "Singapore GST", path: "/global/singapore-gst" },
+                    { label: "Singapore Corp Tax", path: "/global/singapore-corporate-tax" },
+                    { label: "Australia GST", path: "/global/australia-gst" },
+                    { label: "China Enterprise Tax", path: "/global/china-enterprise-tax" },
+                    { label: "Hong Kong Corp Tax", path: "/global/hong-kong-tax" }
+                ]
+            },
+            {
+                category: "Detailed Country Tax",
+                items: [
+                    { label: "Australia Income Tax", path: "/global/australia-income-tax" },
+                    { label: "Australia FBT", path: "/global/australia-fbt" },
+                    { label: "China Individual Tax", path: "/global/china-individual-tax" },
+                    { label: "Hong Kong Individual", path: "/global/hong-kong-individual" },
+                    { label: "Ireland Income Tax", path: "/global/ireland-income-tax" },
+                    { label: "Ireland Capital Gains", path: "/global/ireland-cgt" },
+                    { label: "Ireland Cap. Acquisition", path: "/global/ireland-cat" }
                 ]
             },
             {
@@ -305,15 +346,8 @@ export const menuData = [
                 items: [
                     { label: "Ajman Free Zone", path: "/global/ajman" },
                     { label: "UAQ Free Zone", path: "/global/uaq" },
-                    { label: "UAE Embassy Attestation", path: "/global/uae-attestation" }
-                ]
-            },
-            {
-                category: "Tax & Compliance",
-                items: [
-                    { label: "UK VAT", path: "/global/uk-vat" },
-                    { label: "UAE VAT", path: "/global/uae-vat" },
-                    { label: "UAE Corporate Tax", path: "/global/uae-corporate-tax" }
+                    { label: "International Trademark", path: "/global/international-trademark" },
+                    { label: "USA Trademark", path: "/global/usa-trademark" }
                 ]
             }
         ]

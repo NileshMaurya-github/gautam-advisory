@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
+import TrustVisual from './TrustVisual';
 
 const Hero = () => {
     return (
@@ -33,18 +34,11 @@ const Hero = () => {
 
                 <motion.div
                     className={styles.visual}
-                    initial={{ opacity: 0, x: 50, rotateY: -30 }}
-                    animate={{ opacity: 1, x: 0, rotateY: -15 }}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
                 >
-                    <div className={styles.glassCard}>
-                        {/* Custom Generated GST Dashboard Image */}
-                        <img
-                            src="/IMG_20251224_214937.png"
-                            alt="GST & Tax Compliance Dashboard"
-                            className={styles.dashboardImage}
-                        />
-                    </div>
+                    <TrustVisual />
                 </motion.div>
             </div>
         </section>
