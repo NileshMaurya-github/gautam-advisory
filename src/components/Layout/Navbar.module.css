@@ -109,6 +109,13 @@
     top: 70px;
 }
 
+/* Prevent overflow for first items (GST, Startup) */
+.navItem:first-child .megaMenu,
+.navItem:nth-child(2) .megaMenu {
+    left: -50px;
+    transform: none;
+}
+
 /* Prevent overflow for last items (like Global) */
 .navItem:last-child .megaMenu,
 .navItem:nth-last-child(2) .megaMenu {
