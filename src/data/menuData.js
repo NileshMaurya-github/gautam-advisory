@@ -307,6 +307,14 @@ export const menuData = [
                     { label: "UAQ Free Zone", path: "/global/uaq" },
                     { label: "UAE Embassy Attestation", path: "/global/uae-attestation" }
                 ]
+            },
+            {
+                category: "Tax & Compliance",
+                items: [
+                    { label: "UK VAT", path: "/global/uk-vat" },
+                    { label: "UAE VAT", path: "/global/uae-vat" },
+                    { label: "UAE Corporate Tax", path: "/global/uae-corporate-tax" }
+                ]
             }
         ]
     },

@@ -3758,6 +3758,86 @@ export const serviceDetailData = {
                 { component: "Filing Fee", fee: "₹25,000+", remarks: "Legal Professional Fee" }
             ]
         }
+    },
+    "global": {
+        "uk-vat": {
+            title: "UK VAT Registration",
+            tagline: "Expand your business to the United Kingdom. Mandatory for sellers exceeding the threshold.",
+            about: [
+                "Value Added Tax (VAT) in the UK is a tax on consumption. If you are a non-UK based seller selling goods to UK customers, or if your UK turnover exceeds £90,000, you must register for VAT with HMRC (Her Majesty's Revenue and Customs).",
+                "We assist Indian businesses and e-commerce sellers in obtaining UK VAT registration smoothly."
+            ],
+            keyFeature: "Mandatory for Amazon/eBay sellers storing goods in UK warehouses.",
+            advantages: [
+                { title: "Compliance", description: "Avoid penalties and account suspension on marketplaces." },
+                { title: "Reclaim VAT", description: "Claim back VAT paid on business expenses in the UK." },
+                { title: "Trust", description: "Build credibility with UK customers and suppliers." }
+            ],
+            processSteps: [
+                { title: "Assessment", desc: "Check if you meet the threshold for mandatory registration." },
+                { title: "Application", desc: "Submit VAT1 form online to HMRC." },
+                { title: "Vat Certificate", desc: "Receive VAT Registration Number (VRN) by post/online." }
+            ],
+            documents: { "Business": ["Certificate of Incorporation", "Passport of Director", "Address Proof"] },
+            fees: [
+                { component: "Registration Fee", fee: "£150", remarks: "Professional Fee" }
+            ],
+            faqs: [
+                { question: "Do I need a UK bank account?", answer: "Not strictly necessary for registration, but recommended for paying taxes." }
+            ]
+        },
+        "uae-vat": {
+            title: "UAE VAT Registration",
+            tagline: "Comply with UAE Tax Laws. Seamless Registration Process.",
+            about: [
+                "The UAE implemented VAT at a standard rate of 5% on 1st Jan 2018. Registration is mandatory if taxable supplies and imports exceed AED 375,000 per annum.",
+                "Voluntary registration is possible if turnover exceeds AED 187,500."
+            ],
+            keyFeature: "Low 5% tax rate makes UAE an attractive business hub.",
+            advantages: [
+                { title: "Legal Requirement", description: "Mandatory for businesses above the threshold." },
+                { title: "Refunds", description: "Claim refunds on excess input VAT paid." },
+                { title: "Business Growth", description: "Required for large tenders and corporate contracts." }
+            ],
+            processSteps: [
+                { title: "Portal Account", desc: "Create an account on the FTA (Federal Tax Authority) portal." },
+                { title: "Form Filing", desc: "Fill online application with turnover details." },
+                { title: "TRN Issuance", desc: "Receive Tax Registration Number (TRN) upon approval." }
+            ],
+            documents: { "Entity": ["Trade License", "Passport of Owners", "Bank Account Details"] },
+            fees: [
+                { component: "Professional Fee", fee: "AED 1,000", remarks: "Assistance & Filing" }
+            ],
+            faqs: [
+                { question: "Is it mandatory for free zone companies?", answer: "Yes, VAT applies to Free Zone companies as well, with some specific exceptions." }
+            ]
+        },
+        "uae-corporate-tax": {
+            title: "UAE Corporate Tax",
+            tagline: "New Tax Regime in UAE. 9% Corporate Tax on Profits.",
+            about: [
+                "The UAE has introduced Federal Corporate Tax with a headline rate of 9% for taxable income exceeding AED 375,000. It is effective for financial years starting on or after 1 June 2023.",
+                "This marks a significant shift in the UAE's tax landscape, aiming to align with global standards."
+            ],
+            keyFeature: "0% Tax for income up to AED 375,000 to support small businesses.",
+            advantages: [
+                { title: "Global Standards", description: "Aligns UAE with international tax practices." },
+                { title: "Free Zone Benefit", description: "0% tax may still apply to Qualifying Free Zone Persons." },
+                { title: "Small Business Relief", description: "relief for revenue below AED 3 Million." }
+            ],
+            processSteps: [
+                { title: "Registration", desc: "Register for Corporate Tax with FTA." },
+                { title: "Accounting", desc: "Maintain proper books of accounts (Audited financials may be required)." },
+                { title: "Filing", desc: "File annual Corporate Tax Return." }
+            ],
+            documents: { "Company": ["Trade License", "MOA", "Financial Statements"] },
+            fees: [
+                { component: "Registration", fee: "AED 1,500", remarks: "One-time registration" }
+            ],
+            faqs: [
+                { question: "Are salaries taxed?", answer: "No, Corporate Tax is on business profits, not on individual salaries." }
+            ]
+        }
     }
 };
 
