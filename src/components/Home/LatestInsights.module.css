@@ -100,3 +100,24 @@
 .readMore:hover .arrow {
     transform: translateX(4px);
 }
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .header h2 {
+        font-size: 1.75rem;
+    }
+
+    .grid {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        /* Force single column on mobile */
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}

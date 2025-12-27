@@ -83,6 +83,7 @@
 .highlight {
     background: linear-gradient(120deg, var(--color-secondary) 0%, #B49B58 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     display: inline-block;
@@ -206,6 +207,53 @@
     .subtitle {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .ticker {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title {
+        font-size: 2.25rem;
+        /* Drastically reduced from 5rem/3.5rem */
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+    }
+
+    .tagline {
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

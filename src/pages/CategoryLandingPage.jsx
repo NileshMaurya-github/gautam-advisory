@@ -91,7 +91,7 @@ const CategoryLandingPage = () => {
             {data.benefits && (
                 <section className={styles.section} style={{ background: '#f8f9fa' }}>
                     <div className="container">
-                        <h2>Why Choose Delhi Filings?</h2>
+                        <h2>Why Choose SKY Filings?</h2>
                         <div className={styles.cardGrid}>
                             {data.benefits.map((bg, i) => (
                                 <div key={i} className={styles.card} style={{ textAlign: 'left', borderLeft: '4px solid #007bff' }}>

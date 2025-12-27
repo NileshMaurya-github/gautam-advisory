@@ -7,6 +7,7 @@ import { menuData } from '../../data/menuData';
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeSubMenu, setActiveSubMenu] = useState(null);
     const location = useLocation();
 
     useEffect(() => {
@@ -19,7 +20,14 @@ const Navbar = () => {
 
     const closeMobileMenu = () => {
         setMobileMenuOpen(false);
+        setActiveSubMenu(null);
         window.scrollTo(0, 0);
+    };
+
+    const toggleSubMenu = (index, e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setActiveSubMenu(activeSubMenu === index ? null : index);
     };
 
     return (
@@ -27,29 +35,55 @@ const Navbar = () => {
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <Link to="/" onClick={closeMobileMenu}>
-                        Delhi <span>Filings</span>
+                        SKY <span>Filings</span>
                     </Link>
                 </div>
 
                 <ul className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
                     {/* Dynamic Menu Items from Data */}
                     {menuData.map((menu, index) => (
-                        <li key={index} className={styles.navItem}>
-                            <Link
-                                to={menu.path}
-                                className={styles.navLink}
+                        <li key={index} className={`${styles.navItem} ${activeSubMenu === index ? styles.activeMobile : ''}`}>
+                            <div
+                                className={styles.navHeader}
                                 onClick={(e) => {
-                                    if (window.innerWidth < 992) {
-                                        closeMobileMenu();
+                                    /* If clicking the empty space or title on mobile, also toggle if there is a submenu */
+                                    if (window.innerWidth < 992 && menu.submenu) {
+                                        toggleSubMenu(index, e);
                                     }
+                                    /* If no submenu, the Link handles it. But wait, Link is inside. Layout issue. */
                                 }}
                             >
-                                {menu.title}
-                            </Link>
+                                <Link
+                                    to={menu.path}
+                                    className={styles.navLink}
+                                    onClick={(e) => {
+                                        if (window.innerWidth < 992) {
+                                            if (menu.submenu) {
+                                                // Prevent navigation and toggle submenu instead
+                                                e.preventDefault();
+                                                toggleSubMenu(index, e);
+                                            } else {
+                                                // If no submenu, close menu as usual
+                                                closeMobileMenu();
+                                            }
+                                        }
+                                    }}
+                                >
+                                    {menu.title}
+                                </Link>
+                                {menu.submenu && (
+                                    <button
+                                        className={`${styles.toggleBtn} ${activeSubMenu === index ? styles.rotate : ''}`}
+                                        onClick={(e) => toggleSubMenu(index, e)}
+                                    >
+                                        <FaChevronDown />
+                                    </button>
+                                )}
+                            </div>
 
                             {/* Mega Menu Dropdown */}
                             {menu.submenu && (
-                                <div className={styles.megaMenu}>
+                                <div className={`${styles.megaMenu} ${activeSubMenu === index ? styles.open : ''}`}>
                                     {menu.submenu.map((subCategory, subIndex) => (
                                         <div key={subIndex} className={styles.menuColumn}>
                                             <div className={styles.categoryTitle}>{subCategory.category}</div>

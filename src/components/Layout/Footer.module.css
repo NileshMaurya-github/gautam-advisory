@@ -45,6 +45,7 @@
     letter-spacing: -0.5px;
     background: linear-gradient(120deg, #0f172a 0%, #007bff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -208,22 +209,91 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 968px) {
+@media (max-width: 991px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 25px;
+        /* Tighter gap */
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding: 30px 0 20px;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    .col h3 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .links li {
+        margin-bottom: 8px;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        display: inline-block;
+        padding: 5px 0;
+    }
+
+    .contactInfo p {
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    .newsletterForm {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .newsletterForm input {
+        border-radius: 4px;
+        /* More compact radius */
+        margin-bottom: 8px;
+        padding: 10px;
+    }
+
+    .newsletterForm button {
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 15px;
     }
 
     .bottom {
         flex-direction: column;
         text-align: center;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        gap: 10px;
     }
 
     .legal {
         justify-content: center;
-    }
-
-    .logo {
-        text-align: left;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }

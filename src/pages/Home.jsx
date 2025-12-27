@@ -22,7 +22,7 @@ const Home = () => {
                         viewport={{ once: true }}
                         className="text-center"
                     >
-                        <h2 className={styles.sectionTitle}>Why Trust Delhi Filings?</h2>
+                        <h2 className={styles.sectionTitle}>Why Trust SKY Filings?</h2>
                         <p className={styles.sectionSubtitle}>We don't just file forms; we architect financial stability.</p>
                     </motion.div>
 

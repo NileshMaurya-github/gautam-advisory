@@ -81,3 +81,65 @@
     line-height: 1.7;
     font-size: 1.05rem;
 }
+
+/* Mobile Compact View */
+@media (max-width: 768px) {
+    .trustSection {
+        padding: var(--spacing-lg) 0;
+        /* Reduced padding */
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+        /* Reduced font size */
+        margin-bottom: 1rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+        /* Significantly reduced margin */
+        padding: 0 15px;
+        /* Add side padding */
+    }
+
+    .trustGrid {
+        gap: 2rem;
+        /* Reduced gap */
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+        padding: 0 10px;
+    }
+
+    .trustCard {
+        padding: 1.5rem 1rem;
+        /* Compact card padding */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        /* Separator instead of shadow for clean mobile view */
+        border-radius: 0;
+    }
+
+    .trustCard:last-child {
+        border-bottom: none;
+    }
+
+    .trustIcon {
+        width: 70px;
+        /* Smaller icon */
+        height: 70px;
+        font-size: 2rem;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .trustCard h3 {
+        font-size: 1.35rem;
+        /* Smaller title */
+        margin-bottom: 0.5rem;
+    }
+
+    .trustCard p {
+        font-size: 0.95rem;
+        /* Smaller text */
+    }
+}

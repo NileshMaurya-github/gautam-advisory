@@ -62,6 +62,16 @@
     cursor: pointer;
 }
 
+.navHeader {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.toggleBtn {
+    display: none;
+}
+
 .navLink {
     text-decoration: none;
     color: #333;
@@ -89,11 +99,9 @@
 .megaMenu {
     position: absolute;
     top: 70px;
-    /* Height of navbar */
     left: 50%;
     transform: translateX(-50%);
     width: 900px;
-    /* Fixed width for standard desktop */
     background: #fff;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     border-radius: 0 0 8px 8px;
@@ -113,19 +121,23 @@
     top: 70px;
 }
 
-/* Prevent overflow for first items (GST, Startup) */
-.navItem:first-child .megaMenu,
-.navItem:nth-child(2) .megaMenu {
-    left: -50px;
-    transform: none;
-}
+/* Desktop-only positioning adjustments */
+@media (min-width: 992px) {
 
-/* Prevent overflow for last items (like Global) */
-.navItem:last-child .megaMenu,
-.navItem:nth-last-child(2) .megaMenu {
-    left: auto;
-    right: 0;
-    transform: none;
+    /* Prevent overflow for first items (GST, Startup) */
+    .navItem:first-child .megaMenu,
+    .navItem:nth-child(2) .megaMenu {
+        left: -50px;
+        transform: none;
+    }
+
+    /* Prevent overflow for last items (like Global) */
+    .navItem:last-child .megaMenu,
+    .navItem:nth-last-child(2) .megaMenu {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
 }
 
 .menuColumn {
@@ -180,6 +192,21 @@
 @media (max-width: 991px) {
     .mobileMenuBtn {
         display: block;
+        margin-left: auto;
+        /* Push to right if logo is absolute */
+    }
+
+    /* Center Logo on Mobile */
+    .container {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        z-index: 1;
     }
 
     .navLinks {
@@ -206,42 +233,115 @@
         height: auto;
         display: block;
         border-bottom: 1px solid #f0f0f0;
+        position: relative;
+        /* Position relative so absolute children position relative to it */
+    }
+
+    .navHeader {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
     }
 
     .navLink {
         padding: 15px 0;
-        width: 100%;
-        justify-content: space-between;
+        flex-grow: 1;
+        border-bottom: none !important;
+        height: auto !important;
+    }
+
+    /* Toggle Button */
+    .toggleBtn {
+        background: none;
+        border: none;
+        padding: 15px 10px;
+        font-size: 1rem;
+        color: #666;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        flex-shrink: 0;
+    }
+
+    .toggleBtn.rotate {
+        transform: rotate(180deg);
+        color: #007bff;
     }
 
     .navLink:hover {
         border-bottom-color: transparent;
     }
 
-    /* Mobile Mega Menu Handling - Accordion Style */
+    /* Mobile Mega Menu - Absolute positioned to overlay without affecting layout */
+    /* Mobile Mega Menu - Absolute positioned to overlay layout */
     .megaMenu {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-        display: none;
-        /* Hidden by default on mobile */
-        padding: 0 0 15px 15px;
-        transform: none;
-        flex-direction: column;
-        gap: 20px;
-        background: #fafafa;
-        border-top: none;
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #F1F5F9;
+        flex-direction: column !important;
+        gap: 0 !important;
+        z-index: 1000 !important;
+        border-radius: 0 !important;
+        transform: none !important;
     }
 
-    /* Show submenu if active state logic is added in JS (optional) or rely on hover for now disabled on mobile touch */
+    .megaMenu.open {
+        display: flex !important;
+        padding: 5px 0 !important;
+        border-top: 1px solid #e2e8f0 !important;
+    }
+
+    /* Hide Category Titles on Mobile */
+    .megaMenu.open .categoryTitle {
+        display: none;
+    }
+
+    /* Adjust list items on mobile to look like reference */
+    .megaMenu.open .menuList li {
+        margin-bottom: 0;
+    }
+
+    .megaMenu.open .menuList a {
+        padding: 12px 20px 12px 30px;
+        /* Indented text */
+        font-size: 0.95rem;
+        color: #334155;
+        border-left: 2px solid transparent;
+    }
+
+    .megaMenu.open .menuList a:hover {
+        background: #e2e8f0;
+        color: #007bff;
+        padding-left: 30px;
+    }
+
+    /* Override hover behavior causing conflicts */
     .navItem:hover .megaMenu {
+        display: none;
+    }
+
+    .navItem:hover .megaMenu.open {
         display: flex;
-        /* Simple hover effect for mobile emulation */
     }
 
     .menuColumn {
         width: 100%;
+        margin-bottom: 0;
+    }
+
+    .menuColumn:last-child {
+        margin-bottom: 0;
     }
 }
