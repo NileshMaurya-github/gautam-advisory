@@ -7,20 +7,23 @@ import styles from './Services.module.css';
 
 const Services = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [activeSection, setActiveSection] = useState(menuData[0]?.title || '');
+    const [activeSection, setActiveSection] = useState(menuData.find(m => m.submenu)?.title || '');
 
     // Flatten data for search but keep structure for display
     const filteredSections = useMemo(() => {
-        if (!searchTerm) return menuData;
+        // Only include items that are actual service categories (have a submenu)
+        const serviceItems = menuData.filter(item => item.submenu);
+
+        if (!searchTerm) return serviceItems;
 
         const lowerTerm = searchTerm.toLowerCase();
 
-        return menuData.map(section => {
+        return serviceItems.map(section => {
             // Check if section title matches
             if (section.title.toLowerCase().includes(lowerTerm)) return section;
 
             // Filter submenus
-            const filteredSubmenu = section.submenu.map(cat => {
+            const filteredSubmenu = section.submenu?.map(cat => {
                 // Check if category matches
                 if (cat.category.toLowerCase().includes(lowerTerm)) return cat;
 
@@ -33,7 +36,7 @@ const Services = () => {
                     return { ...cat, items: filteredItems };
                 }
                 return null;
-            }).filter(Boolean);
+            }).filter(Boolean) || [];
 
             if (filteredSubmenu.length > 0) {
                 return { ...section, submenu: filteredSubmenu };
@@ -107,7 +110,7 @@ const Services = () => {
             {/* Sticky Navigation */}
             <div className={styles.stickyNavContainer}>
                 <div className={styles.categoryNav}>
-                    {menuData.map((section, index) => (
+                    {menuData.filter(m => m.submenu).map((section, index) => (
                         <button
                             key={index}
                             onClick={() => scrollToSection(section.title)}
