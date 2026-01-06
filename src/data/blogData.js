@@ -86,7 +86,7 @@ export const blogData = [
       </ul>
 
       <h3>How We Can Help?</h3>
-      <p>SKY Filings assists startups in the entire lifecycle of the application: from DPIIT recognition to drafting the pitch deck for the Incubator Evaluation Committee.</p>
+      <p>Tax न्याय assists startups in the entire lifecycle of the application: from DPIIT recognition to drafting the pitch deck for the Incubator Evaluation Committee.</p>
     `
   }
 ];

@@ -22,42 +22,33 @@ const TrustVisual = () => {
     return (
         <div className={styles.visualContainer}>
             {/* Main Central Card */}
+            {/* Main Central Image */}
             <motion.div
-                className={styles.mainCard}
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8 }}
+                className={styles.heroImageContainer}
+                initial={{ scale: 0.9, opacity: 0, y: 30, rotateX: 10 }}
+                animate={{
+                    scale: [1, 1.02, 1],
+                    opacity: 1,
+                    y: [0, -15, 0],
+                    rotateX: [0, 3, 0],
+                    rotateY: [-3, 3, -3]
+                }}
+                transition={{
+                    scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
+                    opacity: { duration: 1 },
+                    y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                    rotateX: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+                    rotateY: { duration: 9, repeat: Infinity, ease: "easeInOut" }
+                }}
             >
-                <div className={styles.pulseRing}></div>
-                <FaShieldAlt className={styles.shieldIcon} />
-                <h2>Trusted Advisory</h2>
-                <div className={styles.verifiedBadge}>
-                    <FaCheckCircle /> 100% Compliant
-                </div>
+                <img
+                    src="/IMG_20260106_182422.jpg"
+                    alt="Trusted Advisory"
+                    className={styles.heroImage}
+                />
             </motion.div>
 
-            {/* Floating Stats */}
-            <div className={styles.statsGrid}>
-                <StatCard
-                    icon={<FaUsers />}
-                    value="500+"
-                    label="Active Clients"
-                    delay={0.2}
-                />
-                <StatCard
-                    icon={<FaChartLine />}
-                    value="98%"
-                    label="Success Rate"
-                    delay={0.4}
-                />
-            </div>
 
-            {/* Background Abstract Shapes */}
-            <motion.div
-                className={styles.orbitCircle}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            />
         </div>
     );
 };

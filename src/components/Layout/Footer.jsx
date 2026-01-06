@@ -19,14 +19,14 @@ const Footer = () => {
 
                     {/* Brand & Address */}
                     <div className={styles.col}>
-                        <h2 className={styles.logo}>SKY Filings</h2>
+                        <img src="/IMG_20260106_182955.jpg" alt="Tax Nyay" className={styles.logoImg} />
                         <p className={styles.about}>
                             Strategic financial guidance for businesses and individuals. We turn compliance into a competitive advantage.
                         </p>
                         <div className={styles.contactInfo}>
                             <p><FaMapMarkerAlt className={styles.icon} /> Vasant Kunj, New Delhi - 110070</p>
                             <p><FaPhoneAlt className={styles.icon} /> +91 92667 30027</p>
-                            <p><FaEnvelope className={styles.icon} /> info@skyfilings.com</p>
+                            <p><FaEnvelope className={styles.icon} /> info@taxnyay.com</p>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>&copy; {new Date().getFullYear()} SKY Filings. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Tax न्याय. All Rights Reserved.</p>
                     <p className={styles.legal}>Privacy Policy | Terms of Service</p>
                 </div>
             </div>

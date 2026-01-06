@@ -47,6 +47,16 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: none;
+    /* Hide old text logo styles if used elsewhere */
+}
+
+.logoImg {
+    height: 70px;
+    width: auto;
+    margin-bottom: 20px;
+    mix-blend-mode: multiply;
+    display: block;
 }
 
 .about {

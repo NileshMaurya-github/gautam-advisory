@@ -31,11 +31,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <nav aria-label="Main Navigation" className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <Link to="/" onClick={closeMobileMenu}>
-                        SKY <span>Filings</span>
+                        <img src="/IMG_20260106_182955.jpg" alt="Tax Nyay" className={styles.logoImg} />
                     </Link>
                 </div>
 

@@ -12,6 +12,7 @@ import BlogPost from './pages/BlogPost';
 import CategoryLandingPage from './pages/CategoryLandingPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
 import About from './pages/About';
+import SearchPage from './pages/SearchPage';
 
 
 // Wrapper for page transitions
@@ -50,6 +51,7 @@ const AppContent = () => {
           <Route path="/blog/:id" element={<PageTransition><BlogPost /></PageTransition>} />
           <Route path="/about" element={<PageTransition><About /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+          <Route path="/search" element={<PageTransition><SearchPage /></PageTransition>} />
         </Routes>
       </AnimatePresence>
     </Layout>

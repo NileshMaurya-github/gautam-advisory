@@ -26,7 +26,7 @@ const About = () => {
                     <div className={styles.storyGrid}>
                         <div className={styles.storyContent}>
                             <h2>Our Story</h2>
-                            <p>Founded with a vision to simplify the complex regulatory landscape of India, SKY Filings has grown from a boutique consultancy to a full-service advisory powerhouse.</p>
+                            <p>Founded with a vision to simplify the complex regulatory landscape of India, Tax न्याय has grown from a boutique consultancy to a full-service advisory powerhouse.</p>
                             <p>We recognized early on that businesses don't just need a tax filer; they need a strategic partner who understands the intersection of law, finance, and growth.</p>
                         </div>
                         <div className={styles.storyVisual}>

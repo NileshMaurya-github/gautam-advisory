@@ -10,7 +10,7 @@ export const serviceDetails = {
         tagline: "The simplest way to start your business in India. Quick, affordable, and compliant.",
         about: [
             "A sole proprietorship is one of the simplest and most popular business structures in India, owned, managed, and controlled by a single individual. With minimal compliance requirements and easy setup, it is ideal for solo entrepreneurs and small businesses looking for a cost-effective way to start their venture.",
-            "SKY Filings can assist you in registering a proprietorship firm online. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free."
+            "Tax न्याय can assist you in registering a proprietorship firm online. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free."
         ],
         keyFeature: "In a sole proprietorship, there is no legal distinction between the owner and the business. All profits, losses, and liabilities are borne directly by the proprietor.",
         advantages: [

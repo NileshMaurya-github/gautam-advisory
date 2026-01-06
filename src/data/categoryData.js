@@ -9,7 +9,7 @@ export const categoryData = {
         subtitle: "Launch your dream business with India's most trusted partner.",
         heroGradient: "linear-gradient(135deg, #007bff 0%, #00d2ff 100%)",
         intro: [
-            "Starting a business is an exciting journey, but the legal formalities can be overwhelming. At SKY Filings, we simplify the incorporation process, ensuring that your startup is legally compliant from day one.",
+            "Starting a business is an exciting journey, but the legal formalities can be overwhelming. At Tax न्याय, we simplify the incorporation process, ensuring that your startup is legally compliant from day one.",
             "Whether you are a solo entrepreneur or a team of co-founders, we guide you in choosing the right business structure—Proprietorship, LLP, or Private Limited Company—tailored to your funding and scalability needs."
         ],
         benefits: [
@@ -64,7 +64,7 @@ export const categoryData = {
         heroGradient: "linear-gradient(135deg, #6610f2 0%, #a46bf5 100%)",
         intro: [
             "Your brand name, logo, and slogan are your most valuable assets. Registering a trademark gives you legal ownership and prevents copycats from stealing your identity.",
-            "SKY Filings provides comprehensive IP services, including Trademark Search, Filing, Objection Handling, and Renewal, ensuring complete protection for your brand."
+            "Tax न्याय provides comprehensive IP services, including Trademark Search, Filing, Objection Handling, and Renewal, ensuring complete protection for your brand."
         ],
         benefits: [
             { title: "Legal Protection", desc: "Right to sue anyone misusing your brand name." },
@@ -163,7 +163,7 @@ export const categoryData = {
         heroGradient: "linear-gradient(135deg, #20c997 0%, #90f1d5 100%)",
         intro: [
             "Running a business involves more than just core operations. You need to manage payroll, bookkeeping, and labor law compliances.",
-            "SKY Filings acts as your virtual CFO and HR department, handling PF/ESI returns, generating payslips, and maintaining your books of accounts."
+            "Tax न्याय acts as your virtual CFO and HR department, handling PF/ESI returns, generating payslips, and maintaining your books of accounts."
         ],
         benefits: [
             { title: "Focus on Core Biz", desc: "Outsource the headache of compliance to us." },

@@ -5,7 +5,7 @@
 
 export const menuData = [
     {
-        title: "GST",
+        title: "GST Services",
         path: "/gst",
         submenu: [
             {
@@ -136,7 +136,7 @@ export const menuData = [
         ]
     },
     {
-        title: "Trademark",
+        title: "Trademark Registration",
         path: "/trademark",
         submenu: [
             {
@@ -382,5 +382,7 @@ export const menuData = [
                 ]
             }
         ]
-    }
+    },
+    { title: "About Us", path: "/about" },
+    { title: "Contact Us", path: "/contact" }
 ];

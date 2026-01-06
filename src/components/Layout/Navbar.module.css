@@ -16,7 +16,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     height: 100%;
@@ -26,12 +26,13 @@
 }
 
 .logo {
-    margin-left: -15px;
+    margin-left: -25px;
+    margin-right: 40px;
 }
 
 .logo a {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #1a1a1a;
     text-decoration: none;
     display: flex;
@@ -40,14 +41,24 @@
 
 .logo span {
     color: #007bff;
-    /* Primary Brand Color */
+    font-weight: 600;
+    display: none;
+    /* Hide if accidentally rendered, but mostly for cleanup */
+}
+
+.logoImg {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    /* Blends white background of JPG with Navbar background */
 }
 
 /* Nav Link Styles */
 .navLinks {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     height: 100%;
     align-items: center;
     margin: 0;
@@ -76,7 +87,8 @@
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
     transition: color 0.2s;
     height: 100%;
     display: flex;
@@ -131,9 +143,8 @@
         transform: none;
     }
 
-    /* Prevent overflow for last items (like Global) */
-    .navItem:last-child .megaMenu,
-    .navItem:nth-last-child(2) .megaMenu {
+    /* Prevent overflow for right-side items (Global, OnDemand, About, Contact) */
+    .navItem:nth-last-child(-n+4) .megaMenu {
         left: auto;
         right: 0;
         transform: none;

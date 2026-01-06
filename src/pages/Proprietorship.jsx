@@ -35,7 +35,7 @@ const Proprietorship = () => {
                         A sole proprietorship is one of the simplest and most popular business structures in India, owned, managed, and controlled by a single individual. With minimal compliance requirements and easy setup, it is ideal for solo entrepreneurs and small businesses looking for a cost-effective way to start their venture.
                     </p>
                     <p>
-                        IndiaFilings can assist you in registering a proprietorship firm online. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free.
+                        Tax न्याय can assist you in registering a proprietorship firm online. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free.
                     </p>
                     <div className={styles.highlightBox}>
                         <h3><FaInfoCircle /> Key Feature</h3>
@@ -119,7 +119,7 @@ const Proprietorship = () => {
                                 <tr>
                                     <td>GST Registration</td>
                                     <td>Free (Govt Portal)</td>
-                                    <td>Mandatory if turnover > ₹40L</td>
+                                    <td>Mandatory if turnover &gt; ₹40L</td>
                                 </tr>
                                 <tr>
                                     <td>MSME (Udyam)</td>
@@ -180,7 +180,7 @@ const Proprietorship = () => {
 
                 {/* Procedure */}
                 <section className={styles.stepSection}>
-                    <h2>Registration Procedure with IndiaFilings</h2>
+                    <h2>Registration Procedure with Tax न्याय</h2>
                     <div className={styles.steps}>
                         <div className={styles.step}>
                             <span>1</span>
