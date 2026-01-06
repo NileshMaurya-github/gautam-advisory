@@ -45,6 +45,8 @@
 }
 
 @media (max-width: 768px) {
+
+
   :root {
     --spacing-md: 1.5rem;
     --spacing-lg: 2.5rem;

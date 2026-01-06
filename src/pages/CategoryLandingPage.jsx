@@ -7,6 +7,8 @@ import HeroContactForm from '../components/HeroContactForm';
 import { getCategoryData } from '../data/categoryData.js';
 import styles from './Startup.module.css';
 
+import SEO from '../components/SEO';
+
 const CategoryLandingPage = () => {
     const { category } = useParams();
     const data = getCategoryData(category);
@@ -22,6 +24,10 @@ const CategoryLandingPage = () => {
 
     return (
         <div className={styles.pageContainer}>
+            <SEO
+                title={data.title}
+                description={data.subtitle}
+            />
             {/* 1. Hero Section */}
             <section className={styles.hero} style={{ background: data.heroGradient }}>
                 <div className={styles.heroContainer}> {/* New Container for Flex Layout */}

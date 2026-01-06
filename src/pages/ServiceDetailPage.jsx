@@ -6,6 +6,8 @@ import HeroContactForm from '../components/HeroContactForm';
 import { getServiceData } from '../data/serviceDetailData.js';
 import styles from './ServiceDetail.module.css';
 
+import SEO from '../components/SEO';
+
 const ServiceDetailPage = () => {
     const { category, serviceId } = useParams();
     const data = getServiceData(category, serviceId);
@@ -20,6 +22,10 @@ const ServiceDetailPage = () => {
 
     return (
         <div className={styles.pageContainer}>
+            <SEO
+                title={data.title}
+                description={data.tagline}
+            />
             {/* Breadcrumb Removed as per user request to move Hero upward */}
 
             {/* Hero Section */}

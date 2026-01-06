@@ -220,6 +220,11 @@
         z-index: 1;
     }
 
+    .logoImg {
+        height: 35px;
+        /* Smaller app-like logo */
+    }
+
     .navLinks {
         position: fixed;
         top: 70px;
@@ -261,6 +266,11 @@
         flex-grow: 1;
         border-bottom: none !important;
         height: auto !important;
+    }
+
+    /* Active state background */
+    .navLink:active {
+        background-color: #f1f5f9;
     }
 
     /* Toggle Button */

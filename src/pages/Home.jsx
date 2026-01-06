@@ -9,9 +9,14 @@ import styles from './Home.module.css';
 import ProcessFlow from '../components/Home/ProcessFlow';
 import Testimonials from '../components/Home/Testimonials';
 
+import SEO from '../components/SEO';
+
 const Home = () => {
     return (
         <div>
+            <SEO
+                description="Tax Nyay - India's Most trusted Platform for Private Pvt Ltd Company Registration, GST Filing, Trademark, and Legal Services. Get Started Today!"
+            />
             <Hero />
 
             <section className={styles.trustSection}>
